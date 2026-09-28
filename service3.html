@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./scss/style.css">
@@ -13,13 +13,77 @@
         #service-intro .service-intro-right .overlay{
             display: none;
         }
-        #service-intro{
-            padding: 50px;
+        *{
+            font-family: "Saira Stencil", sans-serif;
+        }
+        #service-intro .container-fluid{
+            padding: 20px;
+        }
+        #service-intro .container-fluid .row{
+                border-radius: 15px;
+    box-shadow: 0px 0px 15px -3px #c9c9c9;
+    background-color: white;
+    width: 90%;
+            padding: 25px 10px;
         }
         #service-intro .service-intro-right{
             border-radius: 20px;
-            background-image: none
+            background-image: none;
+            text-align: center;
+                display: flex;
+    justify-content: center;
+    align-items: center;
         }
+        .service-intro-right img{
+                width: 90%;
+    border-radius: 20px;
+        }
+        .service-intro-right .list{
+                position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-5px, -50%);
+    list-style: none;
+        }
+        .service-intro-right .list .item{
+                background-color: #ffffffeb;
+    margin: 10px 0;
+    padding: 7px;
+    border-radius: 6px;
+        display: flex;
+    align-items: center;
+        color: darkblue;
+        width: 150px;
+        height: 60px;
+            border: 1px solid #eee;
+    box-shadow: 0px 0px 5px 0px #eee;
+        }
+        .service-intro-right .list .item:first-child i{
+            color: red;
+        }
+        .service-intro-right .list .item i{
+                margin-right: 10px;
+    font-size: 22px;
+        }
+        .service-intro-right .list .item span{
+            width: 105px;
+    display: inline-block;
+font-size: 13px;
+text-align: left;
+        }
+        #service-intro .service-intro-left .text .my-btn{
+                width: 10rem;
+    margin: 20px 10px;
+        }
+        #service-intro .service-intro-left .text .my-btn i{
+            margin-left: 10px;
+        }
+        #service-intro .service-intro-left .text h5{
+                margin: 20px 0 30px;
+        }
+        #categories {
+    padding: 60px 0;
+}
     </style>
 </head>
 <body>
@@ -61,14 +125,31 @@
                         <h2>Zəif axın sistemləri üçün <br><span>vahid platforma</span></h2>
                         <h5>Zəif axın, yanğın aşkarlama, təhlükəsizlik və bina avtomatlaşdırma sistemlərini layihədən istismara qədər vahid mühəndislik yanaşması ilə həyata keçiririk.</h5>
                         <div class="links">
-                            <a href="" class="my-btn">Etrafli</a>
-                            <a href="" class="my-btn btn2">Xidmetlerimiz</a>
+                            <a href="" class="my-btn">Etrafli <i class="fa-solid fa-arrow-right-long"></i></a>
+                            <a href="" class="my-btn btn2">Kesf et<i class="fa-regular fa-compass"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 service-intro-right">
-                    <div class="overlay"></div>
-                    <img src="./images/ec937073-c93d-43f0-8613-a025c662f55d.png" alt="">
+                    <img src="./images/service3.jfif" alt="">
+                    <ul class="list">
+                        <li class="item">
+                            <i class="fa-brands fa-free-code-camp"></i>
+                            <span>Yanğın aşkarlama</span>
+                        </li>
+                        <li class="item">
+                            <i class="fa-solid fa-tower-broadcast"></i>
+                            <span>Video təhlükəsizlik</span>
+                        </li>
+                        <li class="item">
+                            <i class="fa-solid fa-fingerprint"></i>
+                            <span>Giriş və mühafizə</span>
+                        </li>
+                        <li class="item">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <span>Rabite</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -222,4 +303,5 @@
         </div>
     </section>
 </body>
+<script src="https://kit.fontawesome.com/92b1e9fc18.js" crossorigin="anonymous"></script>
 </html>
