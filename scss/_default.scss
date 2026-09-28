@@ -1,0 +1,23 @@
+@use "variables" as *;
+section{
+   background-color: $background;
+   border-bottom: 1px solid #E8EEF5;
+}
+.row{
+        width: 80%;
+        margin: 0 auto;
+}
+.my-btn{
+    width: fit-content;
+    padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 30px;
+    background: $text-muted;
+    border: 1px solid #C9D7E6;
+    color: white;
+}
+.my-btn.btn2{
+    color: $text-muted;
+    background-color: white;
+}

@@ -1,0 +1,35 @@
+@use "variables" as *;
+section{
+    padding: 20px 0;
+}
+.head-content{
+    h6{
+        font-size: 11px;
+font-weight: 600;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+        color: $text-muted-for-change;
+    }
+    h4{
+        font-size: 30px;
+    font-weight: 650;
+    letter-spacing: -0.02em;
+    color: #0d182d;
+    position: relative;
+    padding: 15px 0;
+        &::before{
+            content: "";
+            position: absolute;
+            bottom:0px;
+            left: 0px;
+            width: 5%;
+            height: 3px;
+            background-color: $text-muted-for-change;
+        }
+    }
+    p{
+        color: $text;
+    font-weight: 200;
+    font-size: 15px;
+    }
+}

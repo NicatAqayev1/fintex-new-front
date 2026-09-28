@@ -1,0 +1,58 @@
+@use "variables" as *;
+
+.boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style:  none;
+    .box{
+        overflow: hidden;
+        padding: 10px;
+        .inside{
+        background-color: $box-background;
+        border-radius: 15px;
+        border-bottom: 1px solid #E8EEF5;
+            box-shadow: 0px 0px 5px 0px #e6e6e6;
+            padding: 10px;
+            p{
+            }
+            p:nth-child(1){
+                font-weight: 500;
+                color: $text-muted-for-change;
+                font-size: 26px;
+                    display: flex;
+    align-items: center;
+    i{
+        color: $text-muted;
+            background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 10px;
+    }
+    span{
+        margin-left: 20px;
+    }
+            }
+            p:nth-child(2){
+                font-weight: 700;
+                color: $main-color-first;
+                margin: 30px 0;
+                font-size: 15px;
+            }
+            p:nth-child(3){
+                font-weight: 200;
+                color: $main-color-first;
+                font-size: 12px;
+            }
+            a{
+                color: $main-color-first;
+                padding: 25px;
+                display: block;
+            }
+        }
+    }
+}
